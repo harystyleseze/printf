@@ -34,6 +34,19 @@ int my_printf(const char *format, ...)
 			{
 				break;
 			}
+			else if (*format == 's')
+			{
+				char *str = va_arg(argp, char*);
+				int str_len = 0;
+
+				while (str[str_len] != '\0')
+				{
+					str_len++;
+				}
+
+				write(1, str, str_len);
+				count += str_len;
+			}
 			else if (*format == 'd' || *format == 'i')
 			{
 				int num = va_arg(argp, int);
@@ -67,5 +80,5 @@ int my_printf(const char *format, ...)
 		format++;
 	}
 	va_end(argp);
-	return (count);
+        return (count);
 }
