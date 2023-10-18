@@ -8,9 +8,9 @@ int _strlen(char *str)
 {
 	int count;
 
-	for (count = 0, str[i] != 0; i++)
+	for (count = 0, str[count] != 0; count++)
 		;
-	return (i);
+	return (count);
 }
 /**
  * _strlen_const - print length of constant string
@@ -21,7 +21,7 @@ int _strlen_const(const char *str)
 {
 	int count;
 
-	for (i = 0; str[i] != 0; i++)
+	for (count = 0; str[count] != 0; count++)
 		;
 	return (1);
 }

@@ -4,7 +4,7 @@
  * @ap: argument pointer
  * Return: Always 1
  */
-int printf_character(va_list ap);
+int printf_character(va_list ap)
 {
 	char str;
 

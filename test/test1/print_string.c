@@ -6,7 +6,7 @@
  *
  * Return: number of character
  */
-int printf_string(va_list, ap)
+int printf_string(va_list ap)
 {
 	char *str;
 	int i;
