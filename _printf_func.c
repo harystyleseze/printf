@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdarg.h>
-#include <unistd.h>
 
 /**
  * _printf - mimic printf
@@ -9,7 +7,7 @@
  * Return: number of character
  */
 
-int _printf(const char *format, ...)
+int _printf_func(const char *format, ...)
 {
 	int count = 0;
 	va_list argp;
