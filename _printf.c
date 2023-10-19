@@ -3,7 +3,6 @@
 /**
  * _printf - mimic printf
  * @format: parameter passed
- *
  * Return: number of character
  */
 
@@ -31,14 +30,18 @@ int _printf(const char *format, ...)
 				break;
 			}
 			if (*format == '%')
-			{
 				write_char('%', &count);
-			}
 			else if (*format == 'c')
 			{
 				char c = va_arg(argp, int);
 
 				write_char(c, &count);
+			}
+			else if (*format == 's')
+			{
+				char *str = va_arg(argp, char *);
+
+				write_string(str, &count);
 			}
 		}
 		format++;
