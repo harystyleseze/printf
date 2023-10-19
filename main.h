@@ -7,6 +7,6 @@ int _printf(const char *format, ...);
 void write_char(char c, int *count);
 void write_string(char *str, int *count);
 void write_int(int num, int *count);
-int _printf_func(const char *format, ...);
+int _printf_(const char *format, ...);
 
 #endif
