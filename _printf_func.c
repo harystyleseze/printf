@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _printf - mimic printf
+ * _printf_ - mimic printf
  * @format: parameter passed
  *
  * Return: number of character
  */
 
-int _printf_func(const char *format, ...)
+int _printf_(const char *format, ...)
 {
 	int count = 0;
 	va_list argp;
@@ -29,12 +29,6 @@ int _printf_func(const char *format, ...)
 			if (*format == '\0')
 			{
 				break;
-			}
-			else if (*format == 's')
-			{
-				char *str = va_arg(argp, char*);
-
-				write_string(str, &count);
 			}
 			else if (*format == 'd' || *format == 'i')
 			{
