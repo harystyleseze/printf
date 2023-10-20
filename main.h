@@ -8,5 +8,6 @@ void write_char(char c, int *count);
 void write_string(char *str, int *count);
 void write_int(int num, int *count);
 int _printf_(const char *format, ...);
+int _putchar(char c);
 
 #endif
