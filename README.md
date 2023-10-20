@@ -196,7 +196,4 @@ Handle the following custom conversion specifier:
 
 15. *
 #advanced
-Score: 0.0% (Checks completed: 0.0%)
-
 All the above options work well together.
-
