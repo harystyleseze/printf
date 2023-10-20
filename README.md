@@ -178,7 +178,6 @@ Handle the - flag character for non-custom conversion specifiers.
 
 13. Print is the sharpest and the strongest weapon of our party
 #advanced
-Score: 0.0% (Checks completed: 0.0%)
 
 Handle the following custom conversion specifier:
 
