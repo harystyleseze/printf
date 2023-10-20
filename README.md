@@ -187,12 +187,10 @@ Handle the following custom conversion specifier:
 
 14. The flood of print has turned reading into a process of gulping rather than savoring
 #advanced
-Score: 0.0% (Checks completed: 0.0%)
 
 Handle the following custom conversion specifier:
 
     R: prints the rot13'ed string
-
 
 15. *
 #advanced
