@@ -63,8 +63,6 @@ alex@ubuntu:~/c/printf$
 
 
 3. What one has not experienced, one will never understand in print
-#advanced
-Score: 0.0% (Checks completed: 0.0%)
 
 Handle the following conversion specifiers:
 
