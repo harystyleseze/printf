@@ -126,8 +126,6 @@ Handle the following conversion specifier: p.
 
 
 7. The big print gives and the small print takes away
-#advanced
-Score: 0.0% (Checks completed: 0.0%)
 
 Handle the following flag characters for non-custom conversion specifiers:
 
@@ -138,7 +136,6 @@ Handle the following flag characters for non-custom conversion specifiers:
 
 8. Sarcasm is lost in print
 #advanced
-Score: 0.0% (Checks completed: 0.0%)
 
 Handle the following length modifiers for non-custom conversion specifiers:
 
