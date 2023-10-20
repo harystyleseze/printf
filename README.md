@@ -114,8 +114,6 @@ alex@ubuntu:~/c/printf$
 
 
 6. How is the world ruled and led to war? Diplomats lie to journalists and believe these lies when they see them in print
-#advanced
-Score: 0.0% (Checks completed: 0.0%)
 
 Handle the following conversion specifier: p.
 
