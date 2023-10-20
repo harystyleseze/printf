@@ -19,7 +19,8 @@ int print_character_func(va_list par_type, char buffer[],
 
 	return (handle_write_character_func(c, buffer, flags, width, precision, size));
 }
-/************************* PRINT A STRING FUNCTION*************************/
+
+/**************** PRINT A STRING FUNCTION *****************/
 /**
  * print_string_func - write string value
  * @par_type: parameter
@@ -74,7 +75,8 @@ int print_string_func(va_list par_type, char buffer[],
 
 	return (write(1, str, length));
 }
-/************************* PRINT PERCENT SIGN FUNCTION*************************/
+
+/******** PRINT PERCENT SIGN FUNCTION *******/
 /**
  * print_percent_func - print percent sign to stdout
  * @par_type: parameter passed
@@ -97,7 +99,7 @@ int print_percent_func(va_list par_type, char buffer[],
 	return (write(1, "%%", 1));
 }
 
-/************************* PRINT INT FUNCTION *************************/
+/************** PRINT INT FUNCTION ***************/
 /**
  * print_integer_func - print integer function
  * @par_type: parameter type
@@ -141,7 +143,7 @@ int print_integer_func(va_list par_type, char buffer[],
 	return (write_number_function(is_negative, count, buffer, flags, width, precision, size));
 }
 
-/************************* PRINT BINARY FUNCTION *************************/
+/****** PRINT BINARY FUNCTION ************/
 /**
  * print_binary_func - returns unsigned number
  * @par_type: parameter type
