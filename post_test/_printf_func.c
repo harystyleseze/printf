@@ -7,7 +7,7 @@
  * Return: number of character
  */
 
-int _printf_func(const char *format, ...)
+int _printf(const char *format, ...)
 {
 	int count = 0;
 	va_list argp;
@@ -30,7 +30,7 @@ int _printf_func(const char *format, ...)
 			{
 				break;
 			}
-			else if (*format == 's')
+			if (*format == 's')
 			{
 				char *str = va_arg(argp, char*);
 
