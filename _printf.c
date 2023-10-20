@@ -1,10 +1,11 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _printf - mimic printf
- * @format: parameter passed
- * Return: number of character
- */
+* _printf - mimic printf
+* @format: parameter passed
+* Return: number of character
+*/
 
 int _printf(const char *format, ...)
 {
@@ -20,7 +21,8 @@ int _printf(const char *format, ...)
 	{
 		if (*format != '%')
 		{
-			write_char(*format, &count);
+			_putchar(*format);
+			count++;
 		}
 		else
 		{
@@ -30,18 +32,52 @@ int _printf(const char *format, ...)
 				break;
 			}
 			if (*format == '%')
-				write_char('%', &count);
+			{
+				_putchar('%');
+				count++;
+			}
 			else if (*format == 'c')
 			{
 				char c = va_arg(argp, int);
 
-				write_char(c, &count);
+				_putchar(c);
+				count++;
 			}
 			else if (*format == 's')
 			{
 				char *str = va_arg(argp, char *);
 
-				write_string(str, &count);
+				while (*str)
+				{
+					_putchar(*str);
+					count++;
+					str++;
+				}
+			}
+			else if (*format == 'd' || *format == 'i')
+			{
+				int num = va_arg(argp, int);
+				int divisor;
+
+				if (num < 0)
+				{
+					_putchar('-');
+					count++;
+					num = -num;
+				}
+
+				divisor = 1;
+				while (num / divisor > 9)
+				{
+					divisor *= 10;
+				}
+				while (divisor > 0)
+				{
+					_putchar((num / divisor) + '0');
+					count++;
+					num %= divisor;
+					divisor /= 10;
+				}
 			}
 		}
 		format++;
