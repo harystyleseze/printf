@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * handle_print_func - print value depending on the condition
  * @fmt: format string of argument
