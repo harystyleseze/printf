@@ -39,6 +39,7 @@ struct fmt
 typedef struct fmt fmt_t;
 
 int _printf(const char *format, ...);
+<<<<<<< HEAD
 int handle_print_func(const char *fmt, int *count,
 va_list list_arg, char buffer[], int flags, int width, int precision, int size);
 
@@ -112,5 +113,12 @@ int handles_is_digit_func(char);
 
 long int convert_number_size_func(long int num, int size);
 long int convert_unsigned_size_func(unsigned long int num, int size);
+=======
+void write_char(char c, int *count);
+void write_string(char *str, int *count);
+void write_int(int num, int *count);
+int _printf_(const char *format, ...);
+int _putchar(char c);
+>>>>>>> d9585ca0e825487f039592e7280e3751f0ecdc5d
 
 #endif /* MAIN_H */
