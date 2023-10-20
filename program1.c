@@ -1,6 +1,6 @@
 #include "main.h"
 
-/************************* PRINT CHARACTER FUNCTION *************************/
+/********** PRINT CHARACTER FUNCTION ***************/
 
 /**
  * print_character_func - print character
@@ -17,10 +17,12 @@ int print_character_func(va_list par_type, char buffer[],
 {
 	char c = va_arg(par_type, int);
 
-	return (handle_write_character_func(c, buffer, flags, width, precision, size));
+	return (handle_write_character_func(c,
+		buffer, flags, width, precision, size));
 }
 
-/**************** PRINT A STRING FUNCTION *****************/
+/******* PRINT A STRING FUNCTION *************/
+
 /**
  * print_string_func - write string value
  * @par_type: parameter
@@ -77,6 +79,7 @@ int print_string_func(va_list par_type, char buffer[],
 }
 
 /******** PRINT PERCENT SIGN FUNCTION *******/
+
 /**
  * print_percent_func - print percent sign to stdout
  * @par_type: parameter passed
@@ -100,6 +103,7 @@ int print_percent_func(va_list par_type, char buffer[],
 }
 
 /************** PRINT INT FUNCTION ***************/
+
 /**
  * print_integer_func - print integer function
  * @par_type: parameter type
@@ -140,10 +144,12 @@ int print_integer_func(va_list par_type, char buffer[],
 
 	count++;
 
-	return (write_number_function(is_negative, count, buffer, flags, width, precision, size));
+	return (write_number_function(is_negative,
+		count, buffer, flags, width, precision, size));
 }
 
 /****** PRINT BINARY FUNCTION ************/
+
 /**
  * print_binary_func - returns unsigned number
  * @par_type: parameter type
