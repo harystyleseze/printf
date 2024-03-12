@@ -8,8 +8,8 @@
  */
 int _printf(const char *format, ...)
 {
-	int count = 0, str_len;
-	char ch, *str;
+	int count = 0, str_len, num, len;
+	char ch, *str, buffer[12];
 	va_list args;
 
 	if (format == NULL)
@@ -53,6 +53,15 @@ int _printf(const char *format, ...)
 
 				write(1, str, str_len);
 				count += str_len;
+			}
+			else if (*format == 'd' || *format == 'i')
+			{
+				num = va_arg(args, int);
+
+				len = snprintf(buffer, sizeof(buffer), "%d", num);
+
+				write(1, buffer, len);
+				count += len;
 			}
 		}
 
